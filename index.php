@@ -16,6 +16,7 @@
         <li>Wykonać komendę <code>git checkout master</code> co się stało? ;)</li>
         <li>Wykonać komendę <code>git log</code></li>
         <li>Poczytać o komendzie <code>git pull</code> i <code>git push</code></li>
+        <li>Poczytać o komendzie <code>git revert</code></li>
     </ol>
 </div>
 
