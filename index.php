@@ -23,3 +23,7 @@
 <h2 style="color: red">
     * - Najpierw poczytaj o tej komendzie
 </h2>
+<html>
+<body bgcolor=#ccc>
+</body>
+</html>
