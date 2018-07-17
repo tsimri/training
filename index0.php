@@ -47,7 +47,7 @@
       </div>
       <div class="row">
           <div class="col-sm">
-              <i> <div class="card" style="width: 18rem;">
+              <div class="card">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -102,11 +102,11 @@
   <div class="card-body"> <h5>
     <a href="https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-1950x" class="card-link">Link do strony AMD</a> </h5>
   </div>
-  </div></i>
+  </div>
           </div>
 		  <div class="row">
           <div class="col-sm">
-              <i><div class="card" style="width: 18rem;">
+              <div class="card">
       <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
@@ -115,13 +115,13 @@
   </ol>
    <div class="carousel-inner">
     <div class="carousel-item active">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="http://www.goodram.com/content/uploads/2017/12/ssd-IRDMPRO-03.jpg" alt="0">
+      <img class="d-block w-100" src="http://www.goodram.com/content/uploads/2017/12/ssd-IRDMPRO-03.jpg" alt="0">
     </div>
     <div class="carousel-item">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CqLJfC4k2BUkQPoXXMkc7AHaEc%26pid%3D15.1&f=1" alt="1">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CqLJfC4k2BUkQPoXXMkc7AHaEc%26pid%3D15.1&f=1" alt="1">
     </div>
     <div class="carousel-item">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.morele.net%2Fi500%2F1813250_0_i500.jpg&f=1" alt="2">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.morele.net%2Fi500%2F1813250_0_i500.jpg&f=1" alt="2">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -155,11 +155,11 @@
   <div class="card-body"> <h5>
     <a href="http://www.goodram.com/pl/product/produkty/ssd-irdm-pro/" class="card-link">Link do strony GoodRAM</a> <br>
   </div>
-  </div></i>
+  </div>
           </div>
 		  <div class="row">
           <div class="col-sm">
-              <i><div class="card" style="width: 18rem;">
+              <div class="card" >
       <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
@@ -214,7 +214,7 @@
     <a href="https://www.amd.com/en/products/graphics/radeon-rx-vega-64" class="card-link">Link do strony AMD</a> <br>
 	<a href="https://www.gigabyte.com/Graphics-Card/GV-RXVEGA64SIL-8GD-B#kf" class="card-link">Link do strony Gigabyte</a> </h5>
   </div>
-  </div></i>
+  </div>
           </div>
       </div>
   </div>
