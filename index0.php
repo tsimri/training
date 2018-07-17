@@ -47,7 +47,7 @@
       </div>
       <div class="row">
           <div class="col-sm">
-              <i> <div class="card" style="width: 22rem;">
+              <i> <div class="card" style="width: 18rem;">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -106,7 +106,7 @@
           </div>
 		  <div class="row">
           <div class="col-sm">
-              <i><div class="card" style="width: 24rem;">
+              <i><div class="card" style="width: 18rem;">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -159,7 +159,7 @@
           </div>
 		  <div class="row">
           <div class="col-sm">
-              <i><div class="card" style="width: 22rem;">
+              <i><div class="card" style="width: 18rem;">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
