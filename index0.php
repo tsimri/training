@@ -21,19 +21,11 @@
 			</button>
 		</nav>
 		<div class="container mt-5 mb-5">
-			<div class="row text-center">
-				<h4>Przykąłd użycia grid</h4>
-			</div>
 			<div class="row mt-3 mb-3">
-				<div class="col-lg">
-					<pre>
-						<i>
-							Zwróć uwage na class -> <b>container</b>, <b>row</b>, <b>col-sm</b>
-						</i>
-						<i>
-							Dodatkowo zwróć uwage na clas -> <b>mt-5</b>, <b>mb-5</b>, <b>text-center</b>
-						</i>
-					</pre>
+				<div class="col-lg text-left">
+                    <h2>
+                        List produktów
+                    </h2>
 				</div>
 			</div>
 			<div class="row">
