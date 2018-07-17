@@ -107,28 +107,28 @@
 		  <div class="row">
           <div class="col-sm">
               <i><div class="card" style="width: 18rem;">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="4" class="active"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
   </ol>
    <div class="carousel-inner">
     <div class="carousel-item active">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="http://www.goodram.com/content/uploads/2017/12/ssd-IRDMPRO-03.jpg" alt="1">
+      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="http://www.goodram.com/content/uploads/2017/12/ssd-IRDMPRO-03.jpg" alt="4">
     </div>
     <div class="carousel-item">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CqLJfC4k2BUkQPoXXMkc7AHaEc%26pid%3D15.1&f=1" alt="2">
+      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CqLJfC4k2BUkQPoXXMkc7AHaEc%26pid%3D15.1&f=1" alt="5">
     </div>
     <div class="carousel-item">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.morele.net%2Fi500%2F1813250_0_i500.jpg&f=1" alt="3">
+      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.morele.net%2Fi500%2F1813250_0_i500.jpg&f=1" alt="6">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -160,32 +160,32 @@
 		  <div class="row">
           <div class="col-sm">
               <i><div class="card" style="width: 18rem;">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="8" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="a"></li>
+	<li data-target="#carouselExampleIndicators2" data-slide-to="c"></li>
   </ol>
    <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.videocardz.com%2F1%2F2017%2F07%2FGIGABYTE-RX-Vega-64-Ref.jpg&f=1" alt="1">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.videocardz.com%2F1%2F2017%2F07%2FGIGABYTE-RX-Vega-64-Ref.jpg&f=1" alt="8">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage11.macovi.de%2Fimages%2Fproduct_images%2F1280%2F1188445_1__70250-1.jpg&f=1" alt="2">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage11.macovi.de%2Fimages%2Fproduct_images%2F1280%2F1188445_1__70250-1.jpg&f=1" alt="9">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.evetech.co.za%2Frepository%2FProductImages%2Fgigabyte-radeon-rxvega64-8g-graphic-card-1000px-v1-0005.jpg&f=1" alt="3">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.evetech.co.za%2Frepository%2FProductImages%2Fgigabyte-radeon-rxvega64-8g-graphic-card-1000px-v1-0005.jpg&f=1" alt="a">
     </div>
 	 <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tcPaPMpIjZHcOOmtIb2vJQHaHa%26pid%3D15.1&f=1" alt="4">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tcPaPMpIjZHcOOmtIb2vJQHaHa%26pid%3D15.1&f=1" alt="c">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
