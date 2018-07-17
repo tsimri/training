@@ -57,16 +57,16 @@
   </ol>
    <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wccftech.com%2Fwp-content%2Fuploads%2F2017%2F06%2FAMD-Ryzen-Threadripper_2.png&f=1" alt="1">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wccftech.com%2Fwp-content%2Fuploads%2F2017%2F06%2FAMD-Ryzen-Threadripper_2.png&f=1" alt="0">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages10.newegg.com%2FNeweggImage%2FProductImage%2F19-113-447-V01.jpg&f=1" alt="2">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages10.newegg.com%2FNeweggImage%2FProductImage%2F19-113-447-V01.jpg&f=1" alt="1">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.LPkx5CbBzW8-BVfKzK0ILAHaFH%26pid%3D15.1&f=1" alt="3">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.LPkx5CbBzW8-BVfKzK0ILAHaFH%26pid%3D15.1&f=1" alt="2">
     </div>
 	 <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.vortez.net%2Fcontentteller.php%3Fct%3Darticles%26action%3Dfile%26id%3D37007&f=1" alt="4">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.vortez.net%2Fcontentteller.php%3Fct%3Darticles%26action%3Dfile%26id%3D37007&f=1" alt="3">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -109,19 +109,19 @@
               <i><div class="card" style="width: 18rem;">
       <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators1" data-slide-to="4" class="active"></li>
-    <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
-    <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
   </ol>
    <div class="carousel-inner">
     <div class="carousel-item active">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="http://www.goodram.com/content/uploads/2017/12/ssd-IRDMPRO-03.jpg" alt="4">
+      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="http://www.goodram.com/content/uploads/2017/12/ssd-IRDMPRO-03.jpg" alt="0">
     </div>
     <div class="carousel-item">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CqLJfC4k2BUkQPoXXMkc7AHaEc%26pid%3D15.1&f=1" alt="5">
+      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.CqLJfC4k2BUkQPoXXMkc7AHaEc%26pid%3D15.1&f=1" alt="1">
     </div>
     <div class="carousel-item">
-      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.morele.net%2Fi500%2F1813250_0_i500.jpg&f=1" alt="6">
+      <img style=" width:500%; height: 300px !important"; class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.morele.net%2Fi500%2F1813250_0_i500.jpg&f=1" alt="2">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -162,23 +162,23 @@
               <i><div class="card" style="width: 18rem;">
       <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
    <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators2" data-slide-to="8" class="active"></li>
-    <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
-    <li data-target="#carouselExampleIndicators2" data-slide-to="a"></li>
-	<li data-target="#carouselExampleIndicators2" data-slide-to="c"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
   </ol>
    <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.videocardz.com%2F1%2F2017%2F07%2FGIGABYTE-RX-Vega-64-Ref.jpg&f=1" alt="8">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.videocardz.com%2F1%2F2017%2F07%2FGIGABYTE-RX-Vega-64-Ref.jpg&f=1" alt="0">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage11.macovi.de%2Fimages%2Fproduct_images%2F1280%2F1188445_1__70250-1.jpg&f=1" alt="9">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage11.macovi.de%2Fimages%2Fproduct_images%2F1280%2F1188445_1__70250-1.jpg&f=1" alt="1">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.evetech.co.za%2Frepository%2FProductImages%2Fgigabyte-radeon-rxvega64-8g-graphic-card-1000px-v1-0005.jpg&f=1" alt="a">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.evetech.co.za%2Frepository%2FProductImages%2Fgigabyte-radeon-rxvega64-8g-graphic-card-1000px-v1-0005.jpg&f=1" alt="2">
     </div>
 	 <div class="carousel-item">
-      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tcPaPMpIjZHcOOmtIb2vJQHaHa%26pid%3D15.1&f=1" alt="c">
+      <img class="d-block w-100" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tcPaPMpIjZHcOOmtIb2vJQHaHa%26pid%3D15.1&f=1" alt="3">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
