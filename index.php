@@ -23,6 +23,42 @@
     <span class="navbar-toggler-icon"></span>
     </button>
    </nav>
+
+
+
+
+  <div class="container mt-5 mb-5">
+      <div class="row text-center">
+          <h4>Przykąłd użycia grid</h4>
+      </div>
+
+      <div class="row mt-3 mb-3">
+          <div class="col-lg">
+              <pre>
+              <i>
+                  Zwróć uwage na class -> <b>container</b>, <b>row</b>, <b>col-sm</b>
+              </i>
+
+              <i>
+                  Dodatkowo zwróć uwage na clas -> <b>mt-5</b>, <b>mb-5</b>, <b>text-center</b>
+              </i>
+              </pre>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm">
+              <i>Tutaj wklej kartę z procesorem</i>
+          </div>
+          <div class="col-sm">
+              <i>tutaj wklej kartę z dyskeim</i>
+          </div>
+          <div class="col-sm">
+              <i>Tutaj kwlej karte z kartą</i>
+          </div>
+      </div>
+  </div>
+
+
  
    <div class="card" style="width: 22rem;">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
