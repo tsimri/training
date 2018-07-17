@@ -104,7 +104,6 @@
   </div>
   </div>
           </div>
-		  <div class="row">
           <div class="col-sm">
               <div class="card">
       <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
@@ -157,7 +156,6 @@
   </div>
   </div>
           </div>
-		  <div class="row">
           <div class="col-sm">
               <div class="card" >
       <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
