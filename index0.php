@@ -73,7 +73,7 @@
 							</ul> <h5>
 						</div>
 						<div class="card-body"> <h5>
-							<a href="https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-1950x" class="card-link">Link do strony AMD</a> </h5>
+							<a href="https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-1950x" target="_blank" class="card-link">Link do strony AMD</a> </h5>
 						</div>
 					</div>
 				</div>
@@ -117,7 +117,7 @@
 							</ul> <h5>
 						</div>
 						<div class="card-body"> <h5>
-							<a href="http://www.goodram.com/pl/product/produkty/ssd-irdm-pro/" class="card-link">Link do strony GoodRAM</a> <br>
+							<a href="http://www.goodram.com/pl/product/produkty/ssd-irdm-pro/" target="_blank" class="card-link">Link do strony GoodRAM</a> <br>
 						</div>
 					</div>
 				</div>
@@ -165,8 +165,8 @@
 							</ul> <h5>
 						</div>
 						<div class="card-body"> <h5>
-							<a href="https://www.amd.com/en/products/graphics/radeon-rx-vega-64" class="card-link">Link do strony AMD</a> <br>
-							<a href="https://www.gigabyte.com/Graphics-Card/GV-RXVEGA64SIL-8GD-B#kf" class="card-link">Link do strony Gigabyte</a> </h5>
+							<a href="https://www.amd.com/en/products/graphics/radeon-rx-vega-64" target="_blank" class="card-link">Link do strony AMD</a> <br>
+							<a href="https://www.gigabyte.com/Graphics-Card/GV-RXVEGA64SIL-8GD-B#kf" target="_blank" class="card-link">Link do strony Gigabyte</a> </h5>
 						</div>
 					</div>
 				</div>
