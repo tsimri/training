@@ -194,7 +194,21 @@
 
                     ?>
 
+
+                    <pre>
+                        .. oczywicie musisz sie polaczyc z baz danych
+                        $connection = mysqli_connect(...Towje dane do bazy...);
+                        $q = "... Twoje zapytanie SQL wybierającae liste produktów"
+                        $rh = mysqli_query($connection, $q);)
+
+                        while($product = mysqli_fetch_row($rh)) {
+                            echo $product['id'];
+                        }
+                    </pre>
+
                 </div>
+
+
 
             </div>
 		</div>
