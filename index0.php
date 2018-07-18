@@ -171,6 +171,35 @@
 					</div>
 				</div>
 			</div>
+
+
+
+            <div class="row">
+                <div class="col-lg">
+                    <h1>Scenariusz</h1>
+
+                    <?php
+                        $imie = "Paweł";
+                    ?>
+
+                    <h3>Tutaj jest przykład jak można wyświetlić zmienną PHP w HTML: <?php echo $imie;?></h3>
+
+                    <?php
+                        $html = "<b>Tutaj</b> masz przykład jak wyświetlić znaczniki HTML w PHP oraz wartość w stringu: </br>";
+                    // to jest komentarz nie będzie widoczny na stronie o ile jest pomiędzy znaczkima PHP
+                    // Tak doklejamy dwa stringi (ciągi znaków) do siebie w PHP
+                        $html .= "<h3>Tutaj jest przykład jak można wyświetlić zmienna PHP w HTML: {$imie}</h3>";
+
+                    echo $html;
+
+                    ?>
+
+                </div>
+
+            </div>
 		</div>
+
+
+
 	</body>
 </html>
