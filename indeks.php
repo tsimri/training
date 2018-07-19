@@ -15,8 +15,9 @@
 			("127.0.0.1", "root", "kjHGIUyt","shop");
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q); 
-			while ($tablica = mysqli_fetch_assoc ($result))
-			echo $tablica['Producent'];
+			while ($product = mysqli_fetch_assoc ($result))
+			echo $product['Producent'];
+			echo $product;
 		?>
 		<?php
 			/*$q = mysqli_query($link,$q);
