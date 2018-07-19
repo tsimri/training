@@ -18,7 +18,7 @@
 
 
 
-			while ($product = mysqli_fetch_assoc ($result))     // w tym miejscu mamy tak jakby pierwszą kolumne tablie
+			while ($product = mysqli_fetch_assoc ($result)) {    // w tym miejscu mamy tak jakby pierwszą kolumne tablie
 		?>     <!-- W tym miejscu konczym skrytp PHP a zaczynaymy HTML -->
 				<div class="card">
                     <div class="card-body">
