@@ -14,18 +14,19 @@
 			$link = mysqli_connect
 			("127.0.0.1", "root", "kjHGIUyt","shop");
 			$q = "SELECT * FROM parts";
-			$result = mysqli_query ($link,$q); 
-			while ($product = mysqli_fetch_assoc ($result)) {
-?>
-                <div class="card">
-                    Tutaj uzpelnij htaml wstawiajac odpwiednio dane z bazy danych
-                </div>
-<?php
-                echo $product['Producent'];
-            }
-
-
+			$result = mysqli_query ($link,$q);
+			$result1 = mysqli_query ($link,$q);
+			while ($product = mysqli_fetch_assoc ($result))
+			while ($nazwa = mysqli_fetch_assoc ($result1)){
 		?>
+				<div class="card">
+                
+				</div>
+				<?php
+				echo $product['Producent'].'<br/>';
+					echo $nazwa['Nazwa'];
+			}
+			?>
 		<?php
 			/*$q = mysqli_query($link,$q);
 			echo '<ul>';
