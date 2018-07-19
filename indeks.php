@@ -15,17 +15,25 @@
 			("127.0.0.1", "root", "kjHGIUyt","shop");
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q);
-			$result1 = mysqli_query ($link,$q);
-			while ($product = mysqli_fetch_assoc ($result))
-			while ($nazwa = mysqli_fetch_assoc ($result1)){
-		?>
+
+
+
+			while ($product = mysqli_fetch_assoc ($result))     // w tym miejscu mamy tak jakby pierwszą kolumne tablie
+		?>     <!-- W tym miejscu konczym skrytp PHP a zaczynaymy HTML -->
 				<div class="card">
-                
+                    <div class="card-body">
+                        <h2 class="card-title"><?php echo $product['Producent']?></h2>
+                            <h4>
+                                <p class="card-text"><?php echo $product['Nazwa']?></p>
+                            </h4>
+
+                            <h1 style="color:red">Resztę uzupełnij sam</h1>
+                    </div>
 				</div>
-				<?php
-				echo $product['Producent'].'<br/>';
-					echo $nazwa['Nazwa'];
-			}
+
+        <?php
+
+        }
 			?>
 		<?php
 			/*$q = mysqli_query($link,$q);
