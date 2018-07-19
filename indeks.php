@@ -16,7 +16,7 @@
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q); 
 			while ($tablica = mysqli_fetch_assoc ($result))
-			echo $tablica['producent'];
+			echo $tablica['Producent'];
 		?>
 		<?php
 			/*$q = mysqli_query($link,$q);
