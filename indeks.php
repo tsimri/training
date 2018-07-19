@@ -19,11 +19,11 @@
 		<div class="container mt-5 mb-5">
 			<div class="row mt-3 mb-3">
 					<?php	
-						while ($product = mysqli_fetch_assoc ($result)) {    // w tym miejscu mamy tak jakby pierwszą kolumne tablie
-					?>     <!-- W tym miejscu konczym skrytp PHP a zaczynaymy HTML -->
+						while ($product = mysqli_fetch_assoc ($result)) {
+					?>
 					<div class="col-sm">
 						<div class="card">
-							<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
+							<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
 							<div class="card-body">
 								<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
 								<h4>	
@@ -39,14 +39,5 @@
 					?>
 			</div>
 		</div>
-		<?php
-			/*$q = mysqli_query($link,$q);
-			echo '<ul>';
-			foreach($link as $linia)
-			{
-				echo '<li>'.trim($linia).'</li>';	
-			}
-			echo '</ul>';*/
-		?>	
 	</body>
 </html>
