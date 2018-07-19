@@ -18,26 +18,25 @@
 		?>
 		<div class="container mt-5 mb-5">
 			<div class="row mt-3 mb-3">
-				<div class="col-lg text-left">
-
 					<?php	
 						while ($product = mysqli_fetch_assoc ($result)) {    // w tym miejscu mamy tak jakby pierwszą kolumne tablie
 					?>     <!-- W tym miejscu konczym skrytp PHP a zaczynaymy HTML -->
-					<div class="cool-sm">
-						<div class="card-body">
-							<h1 style="color:red" class="card-img-top">  <img src= <?php echo $product['Zdjęcie']?>></h1>
-							<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
-							<h4>	
-								<p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p>
-							</h4>
-							<h1 class="card-text" style="color:red">Cena: <?php echo $product['Cena']?></h1>
-							<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6>
+					<div class="col-sm">
+						<div class="card">
+							<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
+							<div class="card-body">
+								<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
+								<h4>	
+									<p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p>
+								</h4>
+								<h1 class="card-text" style="color:red">Cena: <?php echo $product['Cena']?></h1>
+								<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6>
+							</div>	
 						</div>
 					</div>
 					<?php
 						}
 					?>
-				</div>
 			</div>
 		</div>
 		<?php
