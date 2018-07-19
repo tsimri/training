@@ -22,6 +22,8 @@
 		?>     <!-- W tym miejscu konczym skrytp PHP a zaczynaymy HTML -->
 				<div class="card">
                     <div class="card-body">
+					<h1 style="color:red"> <img src= <?php echo $product['Zdjęcie']?>></h1>
+					
                         <h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
                             <h4>
                                 <p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p>
