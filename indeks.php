@@ -31,6 +31,7 @@
 								</h4>
 								<h1 class="card-text" style="color:red">Cena: <?php echo $product['Cena']?></h1>
 								<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6>
+								<h5><a href="<?php echo $Link['Link']?>" target="_blank" class="card-link">Link do szczegółów.</a></h5>
 							</div>	
 						</div>
 					</div>
