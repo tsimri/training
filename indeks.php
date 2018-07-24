@@ -18,26 +18,25 @@
 		?>
 		<div class="container mt-5 mb-5">
 			<div class="row mt-3 mb-3">
-					<?php	
-						while ($product = mysqli_fetch_assoc ($result)) {
-					?>
-					<div class="col-sm">
-						<div class="card">
-							<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
-							<div class="card-body">
-								<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
-								<h4>	
-									<p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p>
-								</h4>
-								<h1 class="card-text" style="color:red">Cena: <?php echo $product['Cena']?></h1>
-								<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6>
-								<h5><a href="http://localhost/detail.php?id<?php echo $product['id']?>">Link do szczegółów.</a></h5>
-							</div>	
-						</div>
+				<?php	
+					while ($product = mysqli_fetch_assoc ($result)) {
+				?>
+				<div class="col-sm">
+					<div class="card">
+						<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
+						<div class="card-body">
+							<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
+							<h4>	
+								<p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p>
+							</h4>
+							<h1 class="card-text" style="color:red">Cena: <?php echo $product['Cena']?></h1>
+							<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6
+							<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>							</div>	
 					</div>
-					<?php
-						}
-					?>
+				</div>
+				<?php
+					}
+				?>
 			</div>
 		</div>
 	</body>
