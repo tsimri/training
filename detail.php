@@ -51,9 +51,9 @@
 				<div class="card-body">
 					<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
 					<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
-					<h4><p class="card-text">Cena: <?php echo 1.23*$product['Cena']?></p> </h4>
+					<h4><p class="card-text">Cena: <?php echo round (1.23*$product['Cena'], 2);?></p> </h4>
 					<ul class="list-group list-group-flush">
-						<h5><li class="list-group-item">Producent: <?php echo $product['Producent']?></li></h5>
+						<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
 						<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
 						<h5><li class="list-group-item">Base Frequency: <?php echo $product['Base Frequency']?></li></h5>
 						<h5><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h5>
