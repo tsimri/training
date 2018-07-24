@@ -42,6 +42,7 @@
 			("127.0.0.1", "root", "kjHGIUyt","shop");
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q);
+			var_dump($product);
 		?>
 		<?php	
 			$product = mysqli_fetch_assoc ($result) ;
