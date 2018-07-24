@@ -42,7 +42,6 @@
 			("127.0.0.1", "root", "kjHGIUyt","shop");
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q);
-			var_dump($product);
 		?>
 		<?php	
 			$product = mysqli_fetch_assoc ($result) ;
@@ -62,24 +61,24 @@
 								<img class="d-block w-100" src="link zdjęcia" alt="1">
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<a class="carousel-control-prev" href="" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
-						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<a class="carousel-control-next" href="" role="button" data-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
 					</div>
 					<div class="card-body">
-						<h2 class="card-title"><?php echo $product['Nazwa']?></h2> 
-						<h4><p class="card-text">1</p> </h4>
+						<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
+						<h4><p class="card-text">Cena: <?php echo $product['Cena']?></p> </h4>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">1</li>
+							<li class="list-group-item">Producent: <?php echo $product['Producent']?></li>
 						</ul> <h5>
 					</div>
 					<div class="card-body"> <h5>
-						<a href="Tutaj link" target="_blank" class="card-link">1</a> </h5>
+						<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link</a> </h5>
 					</div>
 				</div>
 			</div>
