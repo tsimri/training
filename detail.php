@@ -46,27 +46,27 @@
 		<?php	
 			$product = mysqli_fetch_assoc ($result) ;
 		?>
-			<div class="col-sm">
-				<div class="card">
-					<div class="card-body">
-						<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
-						<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
-						<h4><p class="card-text">Cena: <?php echo $product['Cena']?></p> </h4>
-						<ul class="list-group list-group-flush">
-							<h5><li class="list-group-item">Producent: <?php echo $product['Producent']?></li></h5>
-							<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
-							<h5><li class="list-group-item">Base Frequency: <?php echo $product['Base Frequency']?></li></h5>
-							<h5><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h5>
-							<h5><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h5>
-							<h5><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h5>
-							<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
-							<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
-						</ul> <h5>
-					</div>
-					<div class="card-body"> <h5>
-						<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link</a> </h5>
-					</div>
+		<div class="col-sm">
+			<div class="card">
+				<div class="card-body">
+					<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
+					<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
+					<h4><p class="card-text">Cena: <?php echo $product['Cena B.']?></p> </h4>
+					<ul class="list-group list-group-flush">
+						<h5><li class="list-group-item">Producent: <?php echo $product['Producent']?></li></h5>
+						<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
+						<h5><li class="list-group-item">Base Frequency: <?php echo $product['Base Frequency']?></li></h5>
+						<h5><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h5>
+						<h5><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h5>
+						<h5><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h5>
+						<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
+						<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
+					</ul> <h5>
+				</div>
+				<div class="card-body"> <h5>
+					<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link</a> </h5>
 				</div>
 			</div>
+		</div>
 	</body>
 </html>
