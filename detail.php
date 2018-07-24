@@ -40,7 +40,7 @@
 		<?php
 			$link = mysqli_connect
 			("127.0.0.1", "root", "kjHGIUyt","shop");
-			$q = "SELECT * FROM parts";
+			$q = "SELECT * FROM parts WHERE id = {$id}";
 			$result = mysqli_query ($link,$q);
 		?>
 		<?php	
@@ -48,33 +48,19 @@
 		?>
 			<div class="col-sm">
 				<div class="card">
-					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="d-block w-100" src="link zdjęcia" alt="0">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="link zdjęcia" alt="1">
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
 					<div class="card-body">
+						<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
 						<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
 						<h4><p class="card-text">Cena: <?php echo $product['Cena']?></p> </h4>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">Producent: <?php echo $product['Producent']?></li>
+							<h5><li class="list-group-item">Producent: <?php echo $product['Producent']?></li></h5>
+							<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
+							<h5><li class="list-group-item">Base Frequency: <?php echo $product['Base Frequency']?></li></h5>
+							<h5><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h5>
+							<h5><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h5>
+							<h5><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h5>
+							<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
+							<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
 						</ul> <h5>
 					</div>
 					<div class="card-body"> <h5>
