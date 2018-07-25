@@ -39,27 +39,27 @@
 			$result = mysqli_query ($link,$q);
 		?>
 		<div class="container mt-5 mb-5">
-			<div class="row mt-3 mb-3">
-				<?php	
-					while ($product = mysqli_fetch_assoc ($result)) {
-				?>
-				<div class="col-sm">
-					<div class="card">
-						<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
-						<div class="card-body">
-							<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
-							<h4>	
-								<p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p>
-							</h4>
-							<h1 class="card-text" style="color:red">Cena: <?php echo round (1.23*$product['Cena'], 2);?></h1>
-							<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6
-							<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>							</div>	
+			<?php	
+				while ($product = mysqli_fetch_assoc ($result)) { ?>
+				<?php$zmienna=<div class="col-sm"> //to jako zmienna ?>
+				    <?php if ($zmienna*3){ //Pewnie i tak źle zrobiłem, ale chodzi mniej więcej o to że jeśli <div...> jest razy 3 to row jest razy 1 tylko nie mam pojęcia jak to zrobić ?>
+					<div class="row mt-3 mb-3"><?php}?>
+						<div class="card">
+							<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
+							<div class="card-body">
+								<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
+								<h4><p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p></h4>
+								<h1 class="card-text" style="color:red">Cena: <?php echo round (1.23*$product['Cena'], 2);?></h1>
+								<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6
+								<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>							
+							</div>	
+						</div>
 					</div>
 				</div>
-				<?php
-					}
-				?>
-			</div>
+			<?php
+				}
+			?>
+					
 		</div>
 	</body>
 </html>
