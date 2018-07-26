@@ -5,7 +5,6 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 		<title>Strona główna</title>
 	</head>
-	
 	<body>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -38,42 +37,41 @@
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q);
 		?>
-		<div class="container mt-5 mb-5">
-			<?php	
-				while ($product = mysqli_fetch_assoc ($result)) { ?>
+		<div class="container-fluid mt-5 mb-5">
 			<?php
-                $zmienna='<div class = "col-sm">'; // to jest prawie ok, ale jezeli w PHP operujemy na stringach (napisach) to muszą być w nawiasach np:
-                $a = "to jest jakiś napis";
-                $b = 'to jest drugi napis';
-                $c = "to jest teź napis ale z 'asjkdfj' ";
-                $d = 'to jest tez inny napis z "dkasdkf" asdf';
-                // wiec na gorze brakuje Ci tam '' i średnika na końcu. Każda instrukcja w php musi miec średnik na końcu
-
-                ?>
-				    <?php if ($zmienna*3){ //Pewnie i tak źle zrobiłem, ale chodzi mniej więcej o to że jeśli <div...> jest razy 3 to row jest razy 1 tylko nie mam pojęcia jak to zrobić ?>
-
-                    // Zwasze najpierw poczytaj o instrukcji w google.
-                    // co musisz zrobić  to co 3 wykonanie pętli trzeba zakończyć i rozpocząć pętlę '<div class="col-sm"></div>' kolumnę robiąc np. echo '</div>';
-
-
-
-					<div class="row mt-3 mb-3"><?php}?>
-						<div class="card">
-							<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
-							<div class="card-body">
-								<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
-								<h4><p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p></h4>
-								<h1 class="card-text" style="color:red">Cena: <?php echo round (1.23*$product['Cena'], 2);?></h1>
-								<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6
-								<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>							
-							</div>	
-						</div>
-					</div>
-		</div>
-			<?php
-				}
+				$koniec = 0;	
+				$zmiana = 0;
+				while ($product = mysqli_fetch_assoc ($result)) { 
+					if ($zmiana %4 === 0){ 
 			?>
-					
+					<div class="row mt-3 mb-3">
+						
+						<?php 
+							}	
+						?>
+						<div class = "col-sm">
+							<div class="card">	
+								<img class='img-thumbnail' style='max-height:10rem max-width:12rem'  src="<?php echo $product['Zdjęcie']?>" >
+								<div class="card-body">
+									<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
+									<h4><p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p></h4>
+									<h1 class="card-text" style="color:red">Cena: <?php echo round (1.23*$product['Cena'], 2);?></h1>
+									<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6>
+									<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>							
+								</div>	
+							</div>
+						</div>
+					<?php	
+						if ($koniec === 3){
+							$koniec = -1;						
+					?>	
+					</div>
+					<?php
+						}
+					$zmiana++;
+					$koniec++;
+						}
+					?>
 		</div>
 	</body>
 </html>
