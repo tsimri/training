@@ -7,9 +7,9 @@ while($zmienna < 11)
   echo $zmienna; 
   $zmienna++;
 
-if ($zmienna %3===0)  ?><br><?php
+if ($zmienna %3===0) 
 {   
-	echo "Podzielna przez 3"; ?><br><?php
+	echo "Podzielna przez 3 </br>"; 
 }} 
  echo $zmienna ;  ?><br><?php
  echo 0/3  ?><br><?php ;echo 1/3 ?><br><?php ; echo 3/3 ?><br><?php;  ?><br><?php?><br><?php?><br><?php?><br><?php
