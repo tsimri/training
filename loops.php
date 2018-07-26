@@ -4,15 +4,23 @@
 <?php
     $zmienna = 0;
     while($zmienna < 11) {
-        echo $zmienna;
+        echo $zmienna.'</br>';
         $zmienna++;
         if ($zmienna %3===0) 
 		{
-            echo "</br>Podzielna przez 3</br>";
+            echo "";
         }
-		if ($zmienna = 3)
+		if ($zmienna === 3)
 		{
-			echo "</br>---</br>";
+			echo "Liczba 3 jest podzielna przez :";
+		}
+		if ($zmienna === 9)
+		{
+			echo "Liczba 3 jest podzielna przez :";
+		}
+		if ($zmienna === 6)
+		{
+			echo "Liczba 3 jest podzielna przez :";
 		}
     }
     echo $zmienna . "</br>";
