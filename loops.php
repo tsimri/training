@@ -1,14 +1,17 @@
-
+<html>
+<body>
 <?php
- $zmienna = 1;
+ $zmienna = 0;
 while($zmienna < 11) 
 {
-  echo $zmienna;
+  echo $zmienna; 
   $zmienna++;
-} 
-if ($zmienna : 3)
-{
-	echo "Podzielna przez 3"
-}
 
+if ($zmienna %3===0)  ?><br><?php
+{   
+	echo "Podzielna przez 3"; ?><br><?php
+}} 
+ echo $zmienna ;  ?><br><?php
+ echo 0/3  ?><br><?php ;echo 1/3 ?><br><?php ; echo 3/3 ?><br><?php;  ?><br><?php?><br><?php?><br><?php?><br><?php
+ echo 0%3 ?><br><?php ;echo 1%3; ?><br><?php ;echo 3%3 ?><br><?php
 ?>
