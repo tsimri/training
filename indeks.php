@@ -41,13 +41,13 @@
 		<div class="container mt-5 mb-5">
 			<?php	
 				while ($product = mysqli_fetch_assoc ($result)) { ?>
-				<?php
-                    $zmienna=<'div class="col-sm">'; // to jest prawie ok, ale jezeli w PHP operujemy na stringach (napisach) to muszą być w nawiasach np:
-                    $a = "to jest jakiś napis";
-                    $b = 'to jest drugi napis';
-                    $c = "to jest teź napis ale z 'asjkdfj' ";
-                    $d = 'to jest tez inny napis z "dkasdkf" asdf';
-                    // wiec na gorze brakuje Ci tam '' i średnika na końcu. Każda instrukcja w php musi miec średnik na końcu
+			<?php
+                $zmienna='<div class = "col-sm">'; // to jest prawie ok, ale jezeli w PHP operujemy na stringach (napisach) to muszą być w nawiasach np:
+                $a = "to jest jakiś napis";
+                $b = 'to jest drugi napis';
+                $c = "to jest teź napis ale z 'asjkdfj' ";
+                $d = 'to jest tez inny napis z "dkasdkf" asdf';
+                // wiec na gorze brakuje Ci tam '' i średnika na końcu. Każda instrukcja w php musi miec średnik na końcu
 
                 ?>
 				    <?php if ($zmienna*3){ //Pewnie i tak źle zrobiłem, ale chodzi mniej więcej o to że jeśli <div...> jest razy 3 to row jest razy 1 tylko nie mam pojęcia jak to zrobić ?>
@@ -69,7 +69,7 @@
 							</div>	
 						</div>
 					</div>
-				</div>
+		</div>
 			<?php
 				}
 			?>
