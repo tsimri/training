@@ -12,15 +12,27 @@
         }
 		if ($zmienna === 3)
 		{
-			echo "Przez 3 jest podzielna liczba :";
+			echo "Liczba ";
+		}
+		if ($zmienna === 3 +1)
+		{
+			echo "jest podzielna przez 3</br>";
 		}
 		if ($zmienna === 9)
 		{
-			echo "Przez 3 jest podzielna liczba :";
+			echo "Liczba ";
+		}
+		if ($zmienna === 9 +1)
+		{
+			echo "jest podzielna przez 3</br>";
 		}
 		if ($zmienna === 6)
 		{
-			echo "Przez 3 jest podzielna liczba :";
+			echo "Liczba ";
+		}
+		if ($zmienna === 6 +1)
+		{
+			echo "jest podzielna przez 3</br>";
 		}
     }
     echo $zmienna . "</br>";
