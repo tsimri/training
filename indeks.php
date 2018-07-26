@@ -42,7 +42,7 @@
 			<?php	
 				while ($product = mysqli_fetch_assoc ($result)) { ?>
 				<?php
-                    $zmienna=<div class="col-sm">  // to jest prawie ok, ale jezeli w PHP operujemy na stringach (napisach) to muszą być w nawiasach np:
+                    $zmienna=<'div class="col-sm">'; // to jest prawie ok, ale jezeli w PHP operujemy na stringach (napisach) to muszą być w nawiasach np:
                     $a = "to jest jakiś napis";
                     $b = 'to jest drugi napis';
                     $c = "to jest teź napis ale z 'asjkdfj' ";
