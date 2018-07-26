@@ -8,7 +8,7 @@
         $zmienna++;
         if ($zmienna %3===0) 
 		{
-            echo "";
+            echo "<h1>A nie prościej tak:</br> Liczba  {$zmienna} jest podzielna przez 3!</h1>";
         }
 		if ($zmienna === 3)
 		{
