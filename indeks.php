@@ -4,6 +4,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 		<title>Strona główna</title>
+		<style type="text/css">
+			a {
+			color: green;
+			text-decoration: none;
+			}
+		</style>
 	</head>
 	<body>
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,10 +20,10 @@
 			<div class="bg-dark p-4">
 				<ul class="nav nav-pills nav-fill">
 				  <li class="nav-item">
-					<a class="nav-link active" href="http://localhost/indeks.php">Strona główna</a>
+					<a class="nav-link active;  btn-success" href="http://localhost/indeks.php">Strona główna</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="http://localhost/indekser.php">Link</a>
+					<a class="nav-link; text-success" href="http://localhost/indekser.php">Link</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link disabled" href="http://localhost/indekser.php">Nieaktywny</a>
