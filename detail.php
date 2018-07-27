@@ -83,8 +83,8 @@
 					<div class="card">
 						<div class="card-body">
 							<ul>
-								<li><h4><p class="card-text">Cena Brutto: <?php echo round (1.23*$product['CenaB'], 2);?></p> </li>
-								<li><p class="card-text">Cena Netto: <?php echo round (1.23*$product['Cena'], 2);?></p>  </h4>
+								<li><h4><p class="card-text">Cena Brutto: <?php echo round (1.23*$product['CenaB'], 2);?></p></h4></li>
+								<li><h5><p class="card-text">Cena Netto: <?php echo round (1.23*$product['Cena'], 2);?></p></h5> 
 							</ul>
 							<ul><a href="http://localhost/indekser.php" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Koszyk</a></ul>
 							<ul class="list-group list-group-flush">
@@ -98,8 +98,8 @@
 								<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
 							</ul>
 						</div>	
-						 <h5><div class="card-body">
-							<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link</a> </h5>
+						 <h4><div class="card-body">
+							<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link do strony producenta</a> </h4>
 						</div>
 					</div>	
 				</div>		
