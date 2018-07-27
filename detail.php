@@ -42,11 +42,12 @@
 			$product = mysqli_fetch_assoc ($result) ;
 		?>
 	<div class="container-fluid mt-5 mb-5">	
-		<div class='rov mt-3 mb-3'>
+		<div class='row mt-3 mb-3'>
 			<div style="width:auto; height:auto; margin:0px auto; float:left;">
 				<div class="col-sm">
 					<div class="card">
 						<div class="card-body">
+							<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
 							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 							    <div class="carousel-inner">
 									<div class="carousel-item active">
@@ -75,8 +76,8 @@
 				<div class="col-sm">
 					<div class="card">
 						<div class="card-body">
-							<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
-							<h4><p class="card-text">Cena: <?php echo round (1.23*$product['Cena'], 2);?></p> </h4>
+							<ul><li><h4><p class="card-text">Cena: <?php echo round (1.23*$product['Cena'], 2);?></p> </h4></li></ul>
+							<ul><a href="http://localhost/indekser.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Koszyk</a></ul>
 							<ul class="list-group list-group-flush">
 								<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
 								<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
