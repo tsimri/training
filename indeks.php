@@ -34,32 +34,24 @@
 		</div>
 		<?php
 			$link = mysqli_connect
-			("127.0.0.1", "root", "kjHGIUyt","shop");
+			("127.0.0.1", "root", "Marcin.1","shop");
 			$q = "SELECT * FROM parts";
 			$result = mysqli_query ($link,$q);
 		?>
 		<div class="container mt-5 mb-5">
-			<?php	
-				while ($product = mysqli_fetch_assoc ($result)) { ?>
 			<?php
-                $zmienna='<div class = "col-sm">'; // to jest prawie ok, ale jezeli w PHP operujemy na stringach (napisach) to muszą być w nawiasach np:
-                $a = "to jest jakiś napis";
-                $b = 'to jest drugi napis';
-                $c = "to jest teź napis ale z 'asjkdfj' ";
-                $d = 'to jest tez inny napis z "dkasdkf" asdf';
-                // wiec na gorze brakuje Ci tam '' i średnika na końcu. Każda instrukcja w php musi miec średnik na końcu
+                $counter = 0;
+                $endCounter = 0;
+				while ($product = mysqli_fetch_assoc ($result)) {
+            ?>
+			<?php
+                if ($counter % 3 === 0) {
+                    echo '<div class="card-deck mt-3 mb-3">';
+                }
+            ?>
 
-                ?>
-				    <?php if ($zmienna*3){ //Pewnie i tak źle zrobiłem, ale chodzi mniej więcej o to że jeśli <div...> jest razy 3 to row jest razy 1 tylko nie mam pojęcia jak to zrobić ?>
-
-                    // Zwasze najpierw poczytaj o instrukcji w google.
-                    // co musisz zrobić  to co 3 wykonanie pętli trzeba zakończyć i rozpocząć pętlę '<div class="col-sm"></div>' kolumnę robiąc np. echo '</div>';
-
-
-
-					<div class="row mt-3 mb-3"><?php}?>
 						<div class="card">
-							<img class='cart-img-top img-fluid' style='width=93rem' src="<?php echo $product['Zdjęcie']?>" >
+							<img class='cart-img-top img-thumbnail' src="<?php echo $product['Zdjęcie']?>" >
 							<div class="card-body">
 								<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
 								<h4><p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p></h4>
@@ -68,9 +60,16 @@
 								<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>							
 							</div>	
 						</div>
-					</div>
-		</div>
+
 			<?php
+
+                    if ($endCounter === 2) {
+                        echo '</div>';
+                        $endCounter = 0;
+                    } else {
+                        $endCounter++;
+                    }
+                    $counter++;
 				}
 			?>
 					
