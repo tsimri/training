@@ -41,27 +41,59 @@
 			$result = mysqli_query ($link,$q);	
 			$product = mysqli_fetch_assoc ($result) ;
 		?>
-		<div class="col-sm">
-			<div class="card">
-				<div class="card-body">
-					<img class='cart-img-top img-fluid' src="<?php echo $product['Zdjęcie']?>" >
-					<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
-					<h4><p class="card-text">Cena: <?php echo round (1.23*$product['Cena'], 2);?></p> </h4>
-					<ul class="list-group list-group-flush">
-						<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
-						<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
-						<h5><li class="list-group-item">Base Frequency: <?php echo $product['Base Frequency']?></li></h5>
-						<h5><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h5>
-						<h5><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h5>
-						<h5><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h5>
-						<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
-						<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
-					</ul>
-				</div>
-				 <h5><div class="card-body">
-					<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link</a> </h5>
-				</div>
-			</div>
+	<div class="container-fluid mt-5 mb-5">	
+		<div class='rov mt-3 mb-3'>
+			<div style="width:auto; height:auto; margin:0px auto; float:left;">
+				<div class="col-sm">
+					<div class="card">
+						<div class="card-body">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							    <div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="<?php echo $product['Zdjęcie']?>" alt="First slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="<?php echo $product['Zdjęcie']?>" alt="Second slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="<?php echo $product['Zdjęcie']?>" alt="Third slide">
+									</div>
+							    </div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>	
+					</div>		
+				</div>	
+			</div>	
+				<div class="col-sm">
+					<div class="card">
+						<div class="card-body">
+							<h2 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h2> 
+							<h4><p class="card-text">Cena: <?php echo round (1.23*$product['Cena'], 2);?></p> </h4>
+							<ul class="list-group list-group-flush">
+								<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
+								<h5><li class="list-group-item">Stream Processors: <?php echo $product['Stream Processors']?></li></h5>
+								<h5><li class="list-group-item">Base Frequency: <?php echo $product['Base Frequency']?></li></h5>
+								<h5><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h5>
+								<h5><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h5>
+								<h5><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h5>
+								<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
+								<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
+							</ul>
+						</div>	
+						 <h5><div class="card-body">
+							<a href="<?php echo $product['Linof']?>" target="_blank" class="card-link">Link</a> </h5>
+						</div>
+					</div>	
+				</div>		
 		</div>
+	</div>
 	</body>
 </html>
