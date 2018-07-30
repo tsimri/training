@@ -92,14 +92,13 @@
 						<div class="card">
 							<div class="card-body">
 								<ul>
-									<li><h3><p class="card-text">Cena Brutto: <?php echo round (1.23*$product['Cena'], 2);?></p></h3></li>
-									<li><h5><p class="card-text">Cena Netto: <?php echo round ($product['Cena']);?></p></h5> 
+									<h3><p class="card-text">Cena Brutto: <?php echo round (1.23*$product['Cena'], 2);?></p></h3></li>
+									<h5><p class="card-text">Cena Netto: <?php echo round ($product['Cena']);?></p></h5> 
 								</ul>
 								<ul><a href="http://localhost/indekser.php" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Koszyk</a></ul>
 								<ul class="list-group list-group-flush">
-									<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
 									<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
-									<h6><li class="list-group-item">Status: <?php echo $product['Status']?></li></h6>
+									<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
 								</ul>
 							</div>	
 							 <h4><div class="card-body">
@@ -114,12 +113,20 @@
 			<h4><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h4>
 			<h4><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h4>
 			<h4><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h4>
-			<h5><li class="list-group-item">
-				Opis szczegółowy<br>
-				<h4>Byle co dałem żeby zapchać</h4><br>
-				
-				Phantom Gaming X Radeon RX VEGA 56 8G
-
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Opis</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Parametry</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Opinie klijentów</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">				
+					Phantom Gaming X Radeon RX VEGA 56 8G
 					Engine Clock / Memory Clock
 					Boost Clock: 1471 MHz / 800 MHz
 					Base Clock: 1156 MHz / 800 MHz
@@ -134,44 +141,46 @@
 					Temperature and Fan Speed Monitoring
 					Engine / Memory Clock Tweak
 					Engine / Memory Voltage Tweak
-
-				This model may not be sold worldwide. Please contact your local dealer for the availability of this model in your region.
-				AddThis Sharing Buttons
-				Share to FacebookShare to TwitterShare to Google+Share to BaiduShare to VkontakteShare to More
-
+				</div>
+				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					This model may not be sold worldwide. Please contact your local dealer for the availability of this model in your region.
+					AddThis Sharing Buttons
+					Share to FacebookShare to TwitterShare to Google+Share to BaiduShare to VkontakteShare to More
 					Overview
 					Specification
 					Support
 					Where to Buy
-
-				Armor Your VR Machine
-				Prepare yourself well to enjoy the impressive world of Virtual Reality. Before that, you have to make sure everything is qualified, including hardware, software and drivers. Motherboard is the key to connect every critical components and ASRock’s VR Ready products are definitely the one you’re looking for. The premium quality is assured by rigorous testing during development. The sturdy components and rock-solid performance makes you completely immersive in the VR scenario. Users can be assured to experience VR enjoyments without any compatibility problems.
-				THE WORLD’S NEWEST GAMING ARCHITECTURE
-				FreeSync™ 2 READY
-				Get ready to experience smooth brilliant HDR gaming with Vega. Enjoy vibrant HDR content while eliminating image tears and choppiness for effortlessly smooth gameplay. Low Frame-Rate Compensation, Low Latency, Plug and Play and HDR Ready.
-				That’s FreeSync™ 2. FreeSync 2 - over 2x perceivable brightness and color volume over sRGB
-				Support 8K Resolution
-				Not only can it handles 4K graphics but also supports the next generation 8K video output for the ultimate visual experience.
-				AMD Eyefinity Technology
-				AMD Eyefinity technology expands the traditional limits of desktop computing by multiplying your screen area. With multiple monitors, games become more immersive, workstations become more useful and you become more productive.
-				PHANTOM GAMING TWEAK
-				A fast and easy tool that provides users with an abundant collection of subtle settings for professional tweaking such as FAN speed, core clocks, memory frequency and so on. Users may also choose the most optimized mode based on their needs, like OC mode, Silent mode or default mode. Phantom Gaming Tweak delivers more than enough voltage configuration options for anyone who wish to pursuit extremes.
-				Radeon™ WattMan®
-				Save, load and share custom Radeon™ WattMan profiles to quickly and easily optimize performance or create a personalized gaming experience
-				Radeon™ Chill
-				Radeon chill designed to save power, lower temperature, Radeon Chill enables high performance graphics when you battle and saves power when you explore.
-				Radeon™ ReLive
-				Radeon™ ReLive (ReLive) allows users to capture, stream and share gameplay videos and screenshots.
-				Capturing gameplay using Radeon ReLive is easy to configure and has a minimal impact on performance, which is measured in frames per second (FPS).
-				Enhanced Sync
-				Enhanced sync enables low latency gameplay at virtually any framerate and a tear-free experience when your favorite game’s framerate exceeds your display’s refresh rate.1
-				Unlock your VSync. Enhanced sync technology delivers a tear-free experience when framerate exceeds your display’s refresh rate at an ultra-low latency to take your E-Sports gaming to the next level.
-				Radeon™ Overlay
-				The all-new Radeon Overlay lets gamers take performance to the next level with the ability to monitor, record and fine tune their gameplay without ever leaving the game.
-				Much like an activity tracker for your PC, Radeon™ Overlay provides one-click access to Radeon™ ReLive, Performance Monitoring, Radeon™ Chill, Frame Rate Target Control (FRTC), Radeon™ FreeSync and Color Settings.
-				AMD Link
-				AMD Link is a powerful mobile app built to complement Radeon™ Software Adrenalin Edition. It allows you to conveniently access gameplay performance metrics and PC system info on your smartphone and/or tablet. You can easily connect to your PC either by a QR code in Radeon Settings or manually entering the required info. It is designed with today’s socially-connected, mobile-first world in mind - and with the gamer at its center.
-			</li></h5>
+					Armor Your VR Machine
+					Prepare yourself well to enjoy the impressive world of Virtual Reality. Before that, you have to make sure everything is qualified, including hardware, software and drivers. Motherboard is the key to connect every critical components and ASRock’s VR Ready products are definitely the one you’re looking for. The premium quality is assured by rigorous testing during development. The sturdy components and rock-solid performance makes you completely immersive in the VR scenario. Users can be assured to experience VR enjoyments without any compatibility problems.
+					THE WORLD’S NEWEST GAMING ARCHITECTURE
+					FreeSync™ 2 READY
+					Get ready to experience smooth brilliant HDR gaming with Vega. Enjoy vibrant HDR content while eliminating image tears and choppiness for effortlessly smooth gameplay. Low Frame-Rate Compensation, Low Latency, Plug and Play and HDR Ready.
+					That’s FreeSync™ 2. FreeSync 2 - over 2x perceivable brightness and color volume over sRGB
+					Support 8K Resolution
+					Not only can it handles 4K graphics but also supports the next generation 8K video output for the ultimate visual experience.
+					AMD Eyefinity Technology
+					AMD Eyefinity technology expands the traditional limits of desktop computing by multiplying your screen area. With multiple monitors, games become more immersive, workstations become more useful and you become more productive.
+					PHANTOM GAMING TWEAK
+					A fast and easy tool that provides users with an abundant collection of subtle settings for professional tweaking such as FAN speed, core clocks, memory frequency and so on. Users may also choose the most optimized mode based on their needs, like OC mode, Silent mode or default mode. Phantom Gaming Tweak delivers more than enough voltage configuration options for anyone who wish to pursuit extremes.
+					Radeon™ WattMan®
+				</div>
+				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+					Save, load and share custom Radeon™ WattMan profiles to quickly and easily optimize performance or create a personalized gaming experience
+					Radeon™ Chill
+					Radeon chill designed to save power, lower temperature, Radeon Chill enables high performance graphics when you battle and saves power when you explore.
+					Radeon™ ReLive
+					Radeon™ ReLive (ReLive) allows users to capture, stream and share gameplay videos and screenshots.
+					Capturing gameplay using Radeon ReLive is easy to configure and has a minimal impact on performance, which is measured in frames per second (FPS).
+					Enhanced Sync
+					Enhanced sync enables low latency gameplay at virtually any framerate and a tear-free experience when your favorite game’s framerate exceeds your display’s refresh rate.1
+					Unlock your VSync. Enhanced sync technology delivers a tear-free experience when framerate exceeds your display’s refresh rate at an ultra-low latency to take your E-Sports gaming to the next level.
+					Radeon™ Overlay
+					The all-new Radeon Overlay lets gamers take performance to the next level with the ability to monitor, record and fine tune their gameplay without ever leaving the game.
+					Much like an activity tracker for your PC, Radeon™ Overlay provides one-click access to Radeon™ ReLive, Performance Monitoring, Radeon™ Chill, Frame Rate Target Control (FRTC), Radeon™ FreeSync and Color Settings.
+					AMD Link
+					AMD Link is a powerful mobile app built to complement Radeon™ Software Adrenalin Edition. It allows you to conveniently access gameplay performance metrics and PC system info on your smartphone and/or tablet. You can easily connect to your PC either by a QR code in Radeon Settings or manually entering the required info. It is designed with today’s socially-connected, mobile-first world in mind - and with the gamer at its center.
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
