@@ -60,13 +60,13 @@
 											$licz = 0 ;
 											$obraz = explode(';', $product['Zdjęcie']);
 											foreach($obraz as $tab) {var_dump($tab);
-												if ($licz =0)
-												$licz++;
-												{
+												if ($licz = 1)
+												{ 
+													$licz++;
 										?>
-														<div class="carousel-item active">
-															<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
-														</div>
+													<div class="carousel-item active">
+														<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
+													</div>
 											<?php
 												}
 											?>	
