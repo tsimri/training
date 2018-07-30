@@ -57,13 +57,23 @@
 								<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 									<div class="carousel-inner">
 										<?php
+											$licz = 0 ;
 											$obraz = explode(';', $product['Zdjęcie']);
 											foreach($obraz as $tab) {var_dump($tab);
-										?>	
-											<div class="carousel-item active">
-												<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
-											</div>
-										<?php } ?>
+												if ($licz =0)
+												$licz++;
+												{
+										?>
+														<div class="carousel-item active">
+															<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
+														</div>
+											<?php
+												}
+											?>	
+												<div class="carousel-item">
+													<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
+												</div>
+											<?php } ?>
  									</div>
 									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
