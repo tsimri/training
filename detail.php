@@ -60,7 +60,7 @@
 											$licz = 0 ;
 											$obraz = explode(';', $product['Zdjęcie']);
 											foreach($obraz as $tab) {var_dump($tab);
-												if ($licz = 1)
+												if ($licz === 1)
 												{ 
 													$licz++;
 										?>
