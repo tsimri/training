@@ -56,16 +56,15 @@
 								<h1 class="card-title">Nazwa: <?php echo $product['Nazwa']?></h1> 
 								<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img class="d-block w-100" src="<?php echo $product['Zdjęcie']?>" alt="First slide">
-										</div>
-										<div class="carousel-item">
-											<img class="d-block w-100" src="<?php echo $product['Zdjęcie']?>" alt="Second slide">
-										</div>
-										<div class="carousel-item">
-											<img class="d-block w-100" src="<?php echo $product['Zdjęcie']?>" alt="Third slide">
-										</div>
-									</div>
+										<?php
+											$obraz = explode(';', $product['Zdjęcie']);
+											foreach($obraz as $tab) {var_dump($tab);
+										?>	
+											<div class="carousel-item active">
+												<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
+											</div>
+										<?php } ?>
+ 									</div>
 									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 										<span class="sr-only">Previous</span>
@@ -105,11 +104,6 @@
 			<h4><li class="list-group-item">Boost Frequency: <?php echo $product['Boost Frequency']?></li></h4>
 			<h4><li class="list-group-item">Compute Units: <?php echo $product['Compute Units']?></li></h4>
 			<h4><li class="list-group-item">Memory: <?php echo $product['Memory']?></li></h4>
-			<?php
-				$obraz = explode(';', $product['Zdjęcie']);
-				foreach($obraz as $tab) {var_dump($tab);?>
-				<img src="<?php echo $tab ?>"><?php } 
-			?>
 			<h5><li class="list-group-item">
 				Opis szczegółowy<br>
 				<h4>Byle co dałem żeby zapchać</h4><br>
