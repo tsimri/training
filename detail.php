@@ -59,7 +59,7 @@
 										<?php
 											$licz = 0 ;
 											$obraz = explode(';', $product['Zdjęcie']);
-											foreach($obraz as $tab) {var_dump($tab);
+											foreach($obraz as $tab) {($tab);
 												if ($licz === 0)
 												{ 
 													$licz++;
@@ -68,12 +68,12 @@
 														<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
 													</div>
 											<?php
-												}
+												}else{
 											?>	
 												<div class="carousel-item">
 													<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
 												</div>
-											<?php } ?>
+											<?php }} ?>
  									</div>
 									<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
