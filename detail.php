@@ -65,13 +65,13 @@
 													$licz++;
 										?>
 													<div class="carousel-item active">
-														<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
+														<img class="d-block w-100" src="<?php echo $tab ?>" width="450" height="375" alt="Slide">
 													</div>
 											<?php
 												}else{
 											?>	
 												<div class="carousel-item">
-													<img class="d-block w-100" src="<?php echo $tab ?>" alt="Slide">
+													<img class="d-block w-100" src="<?php echo $tab ?>" width="450" height="375" alt="Slide">
 												</div>
 											<?php }} ?>
  									</div>
