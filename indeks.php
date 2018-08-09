@@ -56,7 +56,7 @@
 							}	
 						?>
 						<div class = "col-sm">
-							<div class="card">	
+							<div class="card h-100">	
 								<img class='img-thumbnail' style='max-height:10rem max-width:12rem'  src="<?php echo $product['Zdjęcie']?>" >
 								<div class="card-body">
 									<h2 class="card-title">Producent: <?php echo $product['Producent']?></h2>
