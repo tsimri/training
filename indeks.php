@@ -9,6 +9,12 @@
 			color: green;
 			text-decoration: none;
 			}
+			
+			#blok {
+				position:fixed;
+				right:0;
+				bottom:0;
+			}
 		</style>
 	</head>
 	<body>
@@ -68,17 +74,20 @@
 								</div>	
 							</div>
 						</div>
-					<?php	
-						if ($koniec === 3){
-							$koniec = -1;						
-					?>	
+						<?php	
+							if ($koniec === 3){
+								$koniec = -1;						
+						?>	
 					</div>
-					<?php
-						}
+			<?php
+							}
 					$zmiana++;
 					$koniec++;
-						}
-					?>
+				}
+			?>		
+			<div id="blok">
+				<i class="fas fa-align-justify"></i> 
+			</div>
 		</div>
 	</body>
 </html>
