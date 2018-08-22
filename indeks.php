@@ -14,6 +14,7 @@
 				position:fixed;
 				right:0;
 				bottom:0;
+				background-color:rgba(255, 25, 25, 25);
 			}
 		</style>
 	</head>
@@ -86,7 +87,7 @@
 				}
 			?>		
 			<div id="blok">
-				<i style="font-size:48;" class="fas fa-align-justify"></i> 
+				<i style="font-size:48;" class="fas fa-envelope"></i> 
 			</div>
 		</div>
 	</body>
