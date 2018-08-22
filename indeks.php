@@ -12,6 +12,7 @@
 		</style>
 	</head>
 	<body>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
@@ -63,7 +64,7 @@
 									<h4><p class="card-text">Nazwa: <?php echo $product['Nazwa']?></p></h4>
 									<h1 class="card-text" style="color:red">Cena: <?php echo round (1.23*$product['Cena'], 2);?></h1>
 									<h6 class="card-text" style="color:green">Ilość sztuk: <?php echo $product['Ilość']?></h6>
-									<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>">Link do szczegółów.</a></h5>
+									<h5><a href="http://localhost/detail.php?id=<?php echo $product['id']?>"><i class="fas fa-box-open"></i>  Link do szczegółów.</a></h5>
 								</div>	
 							</div>
 						</div>
