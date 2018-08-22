@@ -14,7 +14,16 @@
 				position:fixed;
 				right:0;
 				bottom:0;
-				background-color:rgba(255, 25, 25, 25);
+			}
+			.button {
+				background-color: #4CAF50;
+				color: white;
+				padding: 20px;
+				text-align: center;
+				display: inline-block;
+				font-size: 16px;
+				margin: 8px 4px;
+				border-radius: 50%;
 			}
 		</style>
 	</head>
@@ -87,7 +96,7 @@
 				}
 			?>		
 			<div id="blok">
-				<i style="font-size:48;" class="fas fa-envelope"></i> 
+				<button style="font-size:48;" class="button fas fa-envelope"></button> 
 			</div>
 		</div>
 	</body>
