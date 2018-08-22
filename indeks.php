@@ -86,7 +86,7 @@
 				}
 			?>		
 			<div id="blok">
-				<i class="fas fa-align-justify"></i> 
+				<i style="font-size:48;" class="fas fa-align-justify"></i> 
 			</div>
 		</div>
 	</body>
