@@ -114,7 +114,9 @@
 								Imię:<br>
 								<input type="text" name="firstname" value="..."><br>
 								Nazwisko:<br>
-								<input type="text" name="lastname" value="..."><br><br>
+								<input type="text" name="lastname" value="..."><br>
+								Treść:<br>
+								<textarea rows="8" cols="32">. . .</textarea><br><br>
 								<input type="submit" value="Wyślij">
 							</form>
 						</div>
