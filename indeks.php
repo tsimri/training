@@ -110,7 +110,13 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							...
+							<form action="/action_page.php">
+								Imię:<br>
+								<input type="text" name="firstname" value="..."><br>
+								Nazwisko:<br>
+								<input type="text" name="lastname" value="..."><br><br>
+								<input type="submit" value="Wyślij">
+							</form>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
