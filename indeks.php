@@ -112,11 +112,13 @@
 						<div class="modal-body">
 							<form action="/action_page.php">
 								Imię:<br>
-								<input type="text" name="firstname" value="..."><br>
+								<input type="text" name="firstname" placeholder="Imię"><br>
 								Nazwisko:<br>
-								<input type="text" name="lastname" value="..."><br>
+								<input type="text" name="lastname" placeholder="Nazwisko"><br>
+								email:<br>
+								<input type="text" name="email" placeholder="email" required="true"><br>
 								Treść:<br>
-								<textarea rows="8" cols="32">. . .</textarea><br><br>
+								<textarea rows="8" cols="32" placeholder="Tekst"></textarea><br><br>
 								<input type="submit" value="Wyślij">
 							</form>
 						</div>
