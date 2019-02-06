@@ -166,20 +166,25 @@
 					Radeon™ WattMan®
 				</div>
 				<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-					Save, load and share custom Radeon™ WattMan profiles to quickly and easily optimize performance or create a personalized gaming experience
-					Radeon™ Chill
-					Radeon chill designed to save power, lower temperature, Radeon Chill enables high performance graphics when you battle and saves power when you explore.
-					Radeon™ ReLive
-					Radeon™ ReLive (ReLive) allows users to capture, stream and share gameplay videos and screenshots.
-					Capturing gameplay using Radeon ReLive is easy to configure and has a minimal impact on performance, which is measured in frames per second (FPS).
-					Enhanced Sync
-					Enhanced sync enables low latency gameplay at virtually any framerate and a tear-free experience when your favorite game’s framerate exceeds your display’s refresh rate.1
-					Unlock your VSync. Enhanced sync technology delivers a tear-free experience when framerate exceeds your display’s refresh rate at an ultra-low latency to take your E-Sports gaming to the next level.
-					Radeon™ Overlay
-					The all-new Radeon Overlay lets gamers take performance to the next level with the ability to monitor, record and fine tune their gameplay without ever leaving the game.
-					Much like an activity tracker for your PC, Radeon™ Overlay provides one-click access to Radeon™ ReLive, Performance Monitoring, Radeon™ Chill, Frame Rate Target Control (FRTC), Radeon™ FreeSync and Color Settings.
-					AMD Link
-					AMD Link is a powerful mobile app built to complement Radeon™ Software Adrenalin Edition. It allows you to conveniently access gameplay performance metrics and PC system info on your smartphone and/or tablet. You can easily connect to your PC either by a QR code in Radeon Settings or manually entering the required info. It is designed with today’s socially-connected, mobile-first world in mind - and with the gamer at its center.
+					<div class="card" style="width: auto;">
+						<?php
+							$id = $_GET['id'];
+							$sqlQuery = "SELECT*FROM komentarze WHERE id = {$id}";
+							var_dump ($sqlQuery);
+							$link = mysqli_connect
+							("127.0.0.1", "root", "kjHGIUyt","shop");
+							$q = "SELECT * FROM komentarze WHERE id = {$id}";
+							$result = mysqli_query ($link,$q);	
+							$kom = mysqli_fetch_assoc ($result) ;
+						?>
+						<img src="<?php echo $kom['Obraz']?>" alt="..." width="64px">
+						<h5 class="card-title"><?php echo $kom['Nazwa']?></h5>
+						<div class="card-body">
+							<p class="card-text">
+								<b>Kom:</b> <?php echo $kom['Tresc']?>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
