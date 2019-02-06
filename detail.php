@@ -169,19 +169,19 @@
 					<div class="card" style="width: auto;">
 						<?php
 							$id = $_GET['id'];
-							$sqlQuery = "SELECT*FROM komentarze WHERE id = {$id}";
+							$sqlQuery = "SELECT*FROM comments WHERE id = {$id}";
 							var_dump ($sqlQuery);
 							$link = mysqli_connect
 							("127.0.0.1", "root", "kjHGIUyt","shop");
-							$q = "SELECT * FROM komentarze WHERE id = {$id}";
+							$q = "SELECT * FROM comments WHERE id = {$id}";
 							$result = mysqli_query ($link,$q);	
 							$kom = mysqli_fetch_assoc ($result) ;
 						?>
-						<img src="<?php echo $kom['Obraz']?>" alt="..." width="64px">
-						<h5 class="card-title"><?php echo $kom['Nazwa']?></h5>
+						<img src="<?php echo $kom['image']?>" alt="..." width="64px">
+						<h5 class="card-title"><?php echo $kom['name']?></h5>
 						<div class="card-body">
 							<p class="card-text">
-								<b>Kom:</b> <?php echo $kom['Tresc']?>
+								<b>Kom:</b> <?php echo $kom['txt']?>
 							</p>
 						</div>
 					</div>
