@@ -169,11 +169,11 @@
 					<div class="card" style="width: auto;">
 						<?php
 							$id = $_GET['id'];
-							$sqlQuery = "SELECT*FROM comments WHERE id = {$id}";
+							$sqlQuery = "SELECT*FROM comments WHERE part_id = {$id}";
 							var_dump ($sqlQuery);
 							$link = mysqli_connect
 							("127.0.0.1", "root", "kjHGIUyt","shop");
-							$q = "SELECT * FROM comments WHERE id = {$id}";
+							$q = "SELECT * FROM comments WHERE part_id = {$id}";
 							$result = mysqli_query ($link,$q);	
 							$kom = mysqli_fetch_assoc ($result) ;
 						?>
