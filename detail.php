@@ -42,7 +42,6 @@
 		<?php
 			$id = $_GET['id'];
 			$sqlQuery = "SELECT*FROM parts WHERE id = {$id}";
-			var_dump ($sqlQuery);
 			$link = mysqli_connect
 			("127.0.0.1", "root", "kjHGIUyt","shop");
 			$q = "SELECT * FROM parts WHERE id = {$id}";
@@ -171,7 +170,6 @@
 						<?php
 							$id = $_GET['id'];
 							$sqlQuery = "SELECT*FROM comments WHERE part_id = {$id}";
-							var_dump ($sqlQuery);
 							$link = mysqli_connect
 							("127.0.0.1", "root", "kjHGIUyt","shop");
 							$q = "SELECT * FROM comments WHERE part_id = {$id}";
