@@ -37,8 +37,19 @@
 			Twój koszyk jest pusty! <br>
 			Wróć na <b><a href="http://localhost/indeks.php" class="alert-link">Stronę główną</a></b>.
 		</div>
+		<?php
+			$id = $_GET['id'];
+			$sqlQuery = "SELECT*FROM koszyk WHERE part_id = {$id}";
+			$link = mysqli_connect
+			("127.0.0.1", "root", "kjHGIUyt","shop");
+			$q = "SELECT * FROM koszyk WHERE part_id = {$id}";
+			$result = mysqli_query ($link,$q);	
+			$product = mysqli_fetch_assoc ($result) ;
+		?>
 		<ul class="list-group">
-			<li class="list-group-item"></li>
+			<li class="list-group-item">
+			
+			</li>
 		</ul>
 	</body>
 </html>
