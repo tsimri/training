@@ -98,7 +98,8 @@
 								</ul>
 								<ul>
 									<form action="koszyk.php" method="post" >
-										<input type="submit" name='part_id' value="Koszyk" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
+										<input type="hidden" name='part_id' value="<?php echo $id ?>">
+										<input type="submit" value="Koszyk" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
 									</form>
 								</ul>
 								<ul class="list-group list-group-flush">
