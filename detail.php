@@ -98,7 +98,7 @@
 								</ul>
 								<ul>
 									<form action="koszyk.php" method="post" >
-										<input type="hidden" name='part_id' value="<?php echo $id ?>">
+										<input type="hidden" name='part_id' value="<?php echo $product['id'] ?>">
 										<input type="submit" value="Koszyk" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
 									</form>
 								</ul>
