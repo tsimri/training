@@ -37,6 +37,7 @@
 			Twój koszyk jest pusty! <br>
 			Wróć na <b><a href="http://localhost/indeks.php" class="alert-link">Stronę główną</a></b>.
 		</div>
+		<?php echo $_POST["part_id"]; ?>
 		<ul class="list-group">
 			<li class="list-group-item">
 			

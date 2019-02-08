@@ -96,7 +96,11 @@
 									<h3><p class="card-text">Cena Brutto: <?php echo round (1.23*$product['Cena'], 2);?></p></h3></li>
 									<h5><p class="card-text">Cena Netto: <?php echo round ($product['Cena']);?></p></h5> 
 								</ul>
-								<ul><a href="http://localhost/koszyk.php" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Koszyk</a></ul>
+								<ul>
+									<form action="koszyk.php" method="post" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
+										<input type="submit" name='part_id' value="1">Koszyk
+									</form>
+								</ul>
 								<ul class="list-group list-group-flush">
 									<h6><li class="list-group-item">Ilość: <?php echo $product['Ilość']?></li></h6>
 									<h5><li class="list-group-item">Producent: <?php echo   $product['Producent']?></li></h5>
