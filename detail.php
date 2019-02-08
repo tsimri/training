@@ -97,8 +97,8 @@
 									<h5><p class="card-text">Cena Netto: <?php echo round ($product['Cena']);?></p></h5> 
 								</ul>
 								<ul>
-									<form action="koszyk.php" method="post" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
-										<input type="submit" name='part_id' value="1">Koszyk
+									<form action="koszyk.php" method="post" >
+										<input type="submit" name='part_id' value="Koszyk" class="btn btn-success btn-lg active" role="button" aria-pressed="true">
 									</form>
 								</ul>
 								<ul class="list-group list-group-flush">
