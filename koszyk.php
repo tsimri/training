@@ -33,16 +33,33 @@
 			</button>	
 		  </nav>
 		</div>
+			 <?php
+				$servername = "localhost";
+				$username = "root";
+				$password = "kjHGIUyt";
+				$dbname = "shop";
+				$conn = new mysqli($servername, $username, $password, $dbname);
+				if ($conn->connect_error) {
+					die("Connection failed: " . $conn->connect_error);
+				}
+			?> 
 		<div class="alert alert-secondary" role="alert" align="center">
 			Twój koszyk jest pusty! <br>
 			Wróć na <b><a href="http://localhost/indeks.php" class="alert-link">Stronę główną</a></b>.
 		</div>
-		<form action="koszyk.php" method="post">
-			<input type="text" name="ilosc" value="Ilość sztuk">
-			<input type="submit">
-		</form>
-		<?php echo $_POST["part_id"];  echo $_POST["ilosc"];?>
 		<ul class="list-group">
+			<li class="list-group-item">
+				<form action="koszyk.php" method="post">
+					<input type="text" name='ilosc' value="Ilość sztuk">
+					<input type="submit" value="Zatwierdź">
+				</form>
+				<?php 
+					echo $id = $_POST["part_id"];
+					echo $_POST["ilosc"];
+					$q = "SELECT * FROM parts WHERE id = {$id}";
+					$sql = "insert into koszyk (id) values ('$id')";
+				?>
+			</li>
 			<li class="list-group-item">
 			
 			</li>
