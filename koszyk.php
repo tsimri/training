@@ -50,9 +50,19 @@
 		<ul class="list-group">
 			<li class="list-group-item">
 				<form action="koszyk.php" method="post">
-					<input type="text" name='ilosc' value="Ilość sztuk">
+					<input type="text" name='ilosc' placeholder="Ilość sztuk">
 					<input type="submit" value="Zatwierdź">
 				</form>
+				<?php 
+					if (isset($_POST['ilosc']));
+					{
+						$ilosc = $_POST['ilosc']
+					}	
+					else 
+					{
+						$ilosc = 1 
+					}
+				?>
 				<?php 
 					echo $id = $_POST["part_id"];
 					echo $_POST["ilosc"];
