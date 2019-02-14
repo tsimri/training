@@ -77,9 +77,11 @@
 					echo $part_id;
 					echo $ilosc;
 					$q = "SELECT * FROM parts WHERE part_id = {$part_id}";
-					$sql = "insert into koszyk (part_id) values ('$part_id')";
-					$sql = "insert into koszyk (quantity) values ('ilosc')";
-					$sql = "insert into koszyk (user) values ('usernamei')";
+					$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'usernamei')";
+					$link = mysqli_connect
+					("127.0.0.1", "root", "kjHGIUyt","shop");
+					$q = "SELECT * FROM parts";
+					$result = mysqli_query ($link,$q);
 				?>
 			</li>
 			<li class="list-group-item">
