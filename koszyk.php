@@ -54,20 +54,32 @@
 					<input type="submit" value="Zatwierdź">
 				</form>
 				<?php 
-					if (isset($_POST['ilosc']));
+					$usernamei ='zenek@test.pl';
+					if (isset($_POST['ilosc']))
 					{
-						$ilosc = $_POST['ilosc']
+						$ilosc=$_POST['ilosc'];
 					}	
 					else 
 					{
-						$ilosc = 1 
+						$ilosc=1;
+					}
+					
+					if (isset($_POST['part_id']))
+					{
+						$part_id=$_POST['part_id'];
+					}	
+					else 
+					{
+						$part_id=1;
 					}
 				?>
 				<?php 
-					echo $id = $_POST["part_id"];
-					echo $_POST["ilosc"];
-					$q = "SELECT * FROM parts WHERE id = {$id}";
-					$sql = "insert into koszyk (id) values ('$id')";
+					echo $part_id;
+					echo $ilosc;
+					$q = "SELECT * FROM parts WHERE part_id = {$part_id}";
+					$sql = "insert into koszyk (part_id) values ('$part_id')";
+					$sql = "insert into koszyk (quantity) values ('ilosc')";
+					$sql = "insert into koszyk (user) values ('usernamei')";
 				?>
 			</li>
 			<li class="list-group-item">
