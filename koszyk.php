@@ -81,12 +81,15 @@
 					$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'usernamei')";
 					$link = mysqli_connect
 					("127.0.0.1", "root", "kjHGIUyt","shop");
-					$q = "SELECT * FROM parts";
-					$result = mysqli_query ($link,$q);
+					$result = mysqli_query ($link,$q,$sql);
+					$conw = mysqli_fetch_assoc ($result);
+					
 				?>
 			</li>
 			<li class="list-group-item">
-			
+			<?php 
+			echo $usernamei;
+			?>
 			</li>
 		</ul>
 	</body>
