@@ -76,15 +76,17 @@
 				<?php 
 					echo $part_id;
 					?><br><?php
-					echo $ilosc;
-					
-					$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'usernamei')";
+					echo $ilosc;		
 					$link = mysqli_connect
 					("127.0.0.1", "root", "kjHGIUyt","shop");
+					$sql = mysql_query("SELECT * FROM koszyk WHERE part_id LIKE '$part_id'");
+					if (mysql_num_rows($sql2) > 1){
+						echo 'jest';
+					}else{
+						echo 'nie ma';
+					}
+					$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'usernamei')";
 					$result = mysqli_query ($link,$sql);
-					$product = mysqli_fetch_assoc ($result);
-					var_dump($sql);?><br><?php
-					echo $sql;
 				?>
 			</li>
 			<li class="list-group-item">
