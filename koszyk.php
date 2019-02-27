@@ -75,6 +75,7 @@
 				?>
 				<?php 
 					echo $part_id;
+					?><br><?php
 					echo $ilosc;
 					$q = "SELECT * FROM parts WHERE part_id = {$part_id}";
 					$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'usernamei')";
