@@ -50,11 +50,6 @@
 		</div>
 		<ul class="list-group">
 			<li class="list-group-item">
-				<form action="koszyk.php" method="post">
-					<input type="text" name='ilosc' placeholder="Ilość sztuk">
-					<input type="hidden" name="part_id" value="<? echo $part_id ?>"> <? //dodane ?>
-					<input type="submit" value="Zatwierdź">
-				</form>
 				<?php 
 					$usernamei ='zenek@test.pl';
 					if (isset($_POST['ilosc']))
@@ -75,6 +70,11 @@
 							$part_id=1;
 						}
 				?>
+				<form action="koszyk.php" method="post">
+					<input type="text" name='ilosc' placeholder="Ilość sztuk">
+					<input type="hidden" name="part_id" value="<? echo $part_id ?>"> <? //dodane ?>
+					<input type="submit" value="Zatwierdź">
+				</form>
 				<?php 
 					echo $part_id;
 					?><br><?php
