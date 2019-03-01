@@ -52,6 +52,7 @@
 			<li class="list-group-item">
 				<form action="koszyk.php" method="post">
 					<input type="text" name='ilosc' placeholder="Ilość sztuk">
+					<input type="hidden" name="part_id" value="<? echo $part_id ?>"> <? //dodane ?>
 					<input type="submit" value="Zatwierdź">
 				</form>
 				<?php 
