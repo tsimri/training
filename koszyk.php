@@ -39,9 +39,10 @@
 				$password = "kjHGIUyt";
 				$dbname = "shop";
 				$conn = new mysqli($servername, $username, $password, $dbname);
-				if ($conn->connect_error) {
-					die("Connection failed: " . $conn->connect_error);
-				}
+				if ($conn->connect_error) 
+					{
+						die("Connection failed: " . $conn->connect_error);
+					}
 			?> 
 		<div class="alert alert-secondary" role="alert" align="center">
 			Twój koszyk jest pusty! <br>
@@ -56,22 +57,22 @@
 				<?php 
 					$usernamei ='zenek@test.pl';
 					if (isset($_POST['ilosc']))
-					{
-						$ilosc=$_POST['ilosc'];
-					}	
-					else 
-					{
-						$ilosc=1;
-					}
+						{
+							$ilosc=$_POST['ilosc'];
+						}	
+						else 
+						{
+							$ilosc=1;
+						}
 					
 					if (isset($_POST['part_id']))
-					{
-						$part_id=$_POST['part_id'];
-					}	
-					else 
-					{
-						$part_id=1;
-					}
+						{
+							$part_id=$_POST['part_id'];
+						}	
+						else 
+						{
+							$part_id=1;
+						}
 				?>
 				<?php 
 					echo $part_id;
@@ -79,19 +80,22 @@
 					echo $ilosc;		
 					$link = mysqli_connect
 					("127.0.0.1", "root", "kjHGIUyt","shop");
-					$sql = mysql_query("SELECT * FROM koszyk WHERE part_id LIKE '$part_id'");
-					if (mysql_num_rows($sql2) > 1){
-						echo 'jest';
-					}else{
-						echo 'nie ma';
-					}
-					$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'usernamei')";
-					$result = mysqli_query ($link,$sql);
+					$result = mysqli_query($link, "SELECT * FROM koszyk WHERE user = '$usernamei' and part_id = '$part_id'");
+					if (mysqli_num_rows($result) < 1)
+						{
+							$sql = "insert into koszyk (part_id,quantity,user) values ('$part_id',$ilosc,'$usernamei')";
+							$result1 = mysqli_query ($link,$sql);
+							echo 'nie ma';
+						}else{
+							$sql = "update koszyk set quantity = quantity + $ilosc where id = '$part_id'";
+							$result2 = mysqli_query ($link,$sql);
+							echo 'jest';
+						}
 				?>
 			</li>
 			<li class="list-group-item">
 			<?php 
-			echo $usernamei;
+				echo $usernamei;
 			?>
 			</li>
 		</ul>
