@@ -72,7 +72,7 @@
 				?>
 				<form action="koszyk.php" method="post">
 					<input type="text" name='ilosc' placeholder="Ilość sztuk">
-					<input type="hidden" name="part_id" value="<? echo $part_id ?>"> <? //dodane ?>
+					<input type="hidden" name="part_id" value="<?php echo $part_id ?>"> <? //dodane ?>
 					<input type="submit" value="Zatwierdź">
 				</form>
 				<?php 
@@ -88,7 +88,7 @@
 							$result1 = mysqli_query ($link,$sql);
 							echo 'nie ma';
 						}else{
-							$sql = "update koszyk set quantity = quantity + $ilosc where id = '$part_id'";
+							$sql = "update koszyk set quantity = quantity + $ilosc where part_id = '$part_id'";
 							$result2 = mysqli_query ($link,$sql);
 							echo 'jest';
 						}
